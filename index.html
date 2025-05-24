@@ -39,11 +39,11 @@
           if (url.startsWith("http")) {
             location.href = url;
           } else {
-            document.getElementById("status").innerText = "Invalid redirect URL.";
+            document.getElementById("status").innerText = "Invalid URL.";
             document.querySelector(".spinner").style.display = "none";
           }
         } catch (err) {
-          document.getElementById("status").innerText = "Error fetching redirect URL.";
+          document.getElementById("status").innerText = "Error fetching URL.";
           document.querySelector(".spinner").style.display = "none";
         }
       }
@@ -53,6 +53,6 @@
   </head>
   <body>
     <div class="spinner"></div>
-    <p id="status">Redirecting to the latest destination...</p>
+    <p id="status"></p>
   </body>
 </html>
